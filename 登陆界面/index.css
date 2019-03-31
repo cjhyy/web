@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 400px;
+	margin: 20px auto;
+}
+form{
+	outline: none;
+	position: relative;
+	
+}
+
+.dl{
+	margin-top: 20px;
+	
+}
+.one{
+	width: 200px;
+	height: 25px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-indent: 1em;
+}
+#btn{
+	box-sizing: border-box;
+	vertical-align: middle;
+	text-indent: 3px;
+}
+.yzm{
+	width: 100px;
+	height: 20px;
+}
+#code{
+	
+	background: #999999;
+		display: inline-block;
+	width: 80px; height: 24px;
+	text-align: center;
+	line-height: 24px;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 7px;
+	padding-left: 7px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+.botton{
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	width: 60px; 
+		height: 30px;
+			outline: 0;
+			border: #153021;
+			background: #499990;
+			color: #fff;
+			border-radius: 5px;
+	
+}
+.zc{
+	position: absolute;
+	top: 130px;
+	left: 180px;
+	width: 60px; 
+		height: 30px;
+			outline: 0;
+			border: #153021;
+			background: #499990;
+			color: #fff;
+			border-radius: 5px;
+			text-align: center;
+	
+}

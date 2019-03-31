@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script src="index.js" type="text/javascript" charset="utf-8">
+		
+		</script>
+			
+	
+	</head>
+	<body>
+		<div class="main">
+			<form action="" method="get">
+				<div  class="dl">
+				账号：<input class="one" id="" type="text" name="账号" placeholder="请输入账号" />
+				</div>
+				<div class="dl">	
+				密码：<input class="one" type="password" name="密码" placeholder="请输入密码" />
+				</div>
+                  <div class="dl">
+				验证码：<input type="text" name="验证码" id="text"   placeholder="请输入验证码" class="yzm" />
+				<a href="javascript:" id="code" onclick="createCode( this )"></a>
+				</div>
+				<div >
+				<input class="botton" type="submit" value="登陆" id="btn" onclick="validate()"/>
+				
+				<input class="zc" type="botton" value="注册" id="" onclick=""/>
+				</div>
+			</form>
+		</div>
+		  <script type="text/javascript">
+		 	var checkCode = document.getElementById("code");
+		 	var btn = document.getElementById("btn"); 	
+		 	var code = "";
+			
+		 			window.onload(createCode());
+		 </script>
+	</body>
+</html>
