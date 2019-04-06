@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <ul>
+                <li class="p1"><a href="#"><img src="img/1.png" alt="" /></a></li>
+                <li class="p2"><a href="#"><img src="img/2.png" alt="" /></a></li>
+                <li class="p3"><a href="#"><img src="img/3.png" alt="" /></a></li>
+                <li class="p4"><a href="#"><img src="img/44.jpg" alt="" /></a></li>
+                <li class="p5"><a href="#"><img src="img/55.jpg" alt="" /></a></li>
+                <li class="p6"><a href="#"><img src="img/66.jpg" alt="" /></a></li>
+                <li class="p7"><a href="#"><img src="img/77.jpg" alt="" /></a></li>
+            </ul>
+        </div>
+        
+        <!-- 左右两边各加一个按钮控制左右 但是3D的话就可以不需要显示这2个按钮 
+        普通水平轮播还是可以加上 我现在吧这2个按钮透明了
+        -->
+        <a href="javascript:;" class="prev btn"><</a>
+        <a href="javascript:;" class="next btn">></a> 
+    
+        <div class="buttons">
+            <a href="javascript:;"><span class="select"></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+            <a href="javascript:;"><span></span></a>
+        </div>
+    </div>
+   
+    <script src="js/main.js"></script>
+    <script>
+        // 
+    var $a=$(".buttons a");
+    var $s=$(".buttons span");
+    
+	var cArr=["p1","p2","p3","p4","p5","p6","p7"];
+      //    当前页面
+    var index=0;  
+
+	$(".next").click(
+		function(){
+		nextimg();
+		}
+	)
+	$(".prev").click(
+		function(){
+		previmg();
+		}
+    )
+    $a.each(function(){
+		$(this).click(function(){
+			var myindex=$(this).index();
+			var b=myindex-index;
+			if(b==0){
+				return;
+			}
+			else if(b>0) {
+				var newarr=cArr.splice(0,b);
+				cArr=$.merge(cArr,newarr);
+				$("li").each(function(i,e){
+				$(e).removeClass().addClass(cArr[i]);
+				})
+				index=myindex;
+				show();
+			}
+			else if(b<0){
+				cArr.reverse();
+				var oldarr=cArr.splice(0,-b)
+				cArr=$.merge(cArr,oldarr);
+				cArr.reverse();
+				$("li").each(function(i,e){
+				$(e).removeClass().addClass(cArr[i]);
+				})
+				index=myindex;
+				show();
+			}
+		})
+    })
+    
+    //点击class为p4的元素触发上一张照片的函数
+	$(document).on("click",".p4",function(){
+		previmg();
+		return false;//返回一个false值，让a标签不跳转
+	});
+
+	//点击class为p2的元素触发下一张照片的函数
+	$(document).on("click",".p2",function(){
+		nextimg();
+		return false;
+	});
+	$(".main,.btn,.buttons").mouseover(function(){
+		clearInterval(timer);
+	})
+	$(".main,.btn,.buttons").mouseleave(function(){
+		timer=setInterval(nextimg,800);
+    })
+
+  
+	timer=setInterval(nextimg,800);
+    </script>
+</body>
+</html>

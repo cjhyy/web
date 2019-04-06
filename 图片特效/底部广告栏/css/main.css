@@ -1,0 +1,55 @@
+*{margin:0px; text-decoration:none; font-family:"Î¢ÈíÑÅºÚ";}
+		.main{width:565px;
+			 height:230px; 
+			 margin:100px auto;
+			position:relative;
+			background:#F9F9F9;
+			padding-top:40px;
+			border:1px dashed #E20076;
+		}
+		#dirl{ 
+			position:absolute; 
+			top:100px; 
+			left:0px;
+		}
+		#dirr{
+			position:absolute; 
+			top:100px; 
+			right:0px;
+		}
+
+		#Scroll{ 
+			width:500px; 
+			margin:0px auto; 
+			height:268px;
+			 overflow:hidden; 
+			 position:relative;
+			 }
+		#Scroll dl{ 
+			width:150px; 
+			text-align:center; 
+			float:left; 
+			font-size:12px; 
+			padding:0px 8px;
+		}
+		#Scroll dl dt{ 
+			width:150px; 
+		}
+		#Scroll dl dd.title{ 
+			line-height:30px; 
+		}
+		#Scroll dl dd.title a{ 
+			color:#000;
+		}
+		#Scroll dl dd span{ 
+			color:#E20076; 
+			font-weight:bold;
+		}
+		
+		.scroll_Con{ 
+            width:1000%; 
+            position:absolute; 
+            left:0px; 
+            top:0px; 
+         
+        }
