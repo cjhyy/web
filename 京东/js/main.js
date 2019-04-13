@@ -1,3 +1,4 @@
+
 $(function () {
     $('.addressList li').on("click",function(){
 		$(this).find('a').addClass('add_checked')
@@ -182,4 +183,3 @@ $(function () {
         $('.bar').stop().animate({ "left": ranking_index * 75 }, 100);
     });
 });
-
