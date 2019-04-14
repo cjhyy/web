@@ -18,7 +18,6 @@
 [鼠标滑过文字特效](https://cjhyy.github.io/web/图片特效/鼠标滑过文字特效/index.html)<br>
 # 按钮菜单
 [管理菜单](https://cjhyy.github.io/web/按钮菜单/管理菜单/index.html)<br>
-[游戏按钮](https://cjhyy.github.io/web/按钮菜单/游戏按钮/index.html)<br>
 [水波按钮](https://cjhyy.github.io/web/按钮菜单/水波按钮/index.html)<br>
 [固定导航栏+回到首页+跳转](https://cjhyy.github.io/web/按钮菜单/固定导航栏+回到首页+跳转/index.html)<br>
 [双语菜单](https://cjhyy.github.io/web/按钮菜单/双语菜单/index.html)<br>
