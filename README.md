@@ -10,7 +10,7 @@
 [网页换肤](https://cjhyy.github.io/web/网页换肤/index.html)<br>
 # 图片效果
 [3D水平轮播图](https://cjhyy.github.io/web/图片特效/3D水平轮播图/index.html)<br>
-[底部广告栏](https://cjhyy.github.io/web/图片特效/3D水平轮播图/index.htmll)<br>
+[底部广告栏](https://cjhyy.github.io/web/图片特效/底部广告栏/index.html)<br>
 [淘宝放大镜效果](https://cjhyy.github.io/web/图片特效/淘宝放大镜效果/index.html)<br>
 [百叶窗轮播图](https://cjhyy.github.io/web/图片特效/百叶窗轮播图/index.html)<br>
 [相册图](https://cjhyy.github.io/web/图片特效/相册图/index.html)<br>
